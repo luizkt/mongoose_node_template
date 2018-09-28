@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "fda32964-4280-4824-bc03-ea3eb0a4506c",
+		"name": "mongoose-node-template",
+		"description": "Collection for testing your node api.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"teste2\",\n\t\"password\": \"pass2\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/user/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						""
+					]
+				},
+				"description": "Get all user from your DB"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /user/{id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"teste2\",\n\t\"password\": \"pass2\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/user/5bad837f5af6f200135dcd41",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"5bad837f5af6f200135dcd41"
+					]
+				},
+				"description": "Get one user from your DB"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"teste2\",\n\t\"password\": \"pass2\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/user/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						""
+					]
+				},
+				"description": "Save one user to your DB"
+			},
+			"response": []
+		}
+	]
+}
